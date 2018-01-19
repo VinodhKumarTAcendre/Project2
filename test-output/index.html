@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>F:\ArboHub_Workspace\arbohub\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">9 methods, 4 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.arbohub.testcases.LoginTest" hash-for-method="testLogin(Guest, GILBKNPFZLQS899L)">testLogin(Guest, GILBKNPFZLQS899L)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.arbohub.testcases.LoginTest" hash-for-method="testLogin(Facebook, GILBKNPFZLQS899L)">testLogin(Facebook, GILBKNPFZLQS899L)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.arbohub.testcases.LoginTest" hash-for-method="testLogin(Phone, GILBKNPFZLQS899L)">testLogin(Phone, GILBKNPFZLQS899L)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.arbohub.testcases.LoginTest" hash-for-method="testLoginScreen(GILBKNPFZLQS899L)">testLoginScreen(GILBKNPFZLQS899L)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.arbohub.testcases.PermissionsTest" hash-for-method="testAllowPermissionPopUps(GILBKNPFZLQS899L)">testAllowPermissionPopUps(GILBKNPFZLQS899L)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.arbohub.testcases.PermissionsTest" hash-for-method="testDenyPermissionPopUps(GILBKNPFZLQS899L)">testDenyPermissionPopUps(GILBKNPFZLQS899L)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.arbohub.testcases.LoginTest" hash-for-method="testLogin(Google, GILBKNPFZLQS899L)">testLogin(Google, GILBKNPFZLQS899L)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.arbohub.testcases.WelcomeOnboardingTest" hash-for-method="testOnboardingScreen(GILBKNPFZLQS899L)">testOnboardingScreen(GILBKNPFZLQS899L)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.arbohub.testcases.WelcomeOnboardingTest" hash-for-method="testWelcomeScreen(GILBKNPFZLQS899L)">testWelcomeScreen(GILBKNPFZLQS899L)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.arbohub.testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(Guest, GILBKNPFZLQS899L)">
+                  </a> <!-- testLogin(Guest, GILBKNPFZLQS899L) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(Guest, GILBKNPFZLQS899L)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.31 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;Yashi&apos;, ip: &apos;10.10.14.217&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20-ea&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=F:\ArboHub_Workspace\arbohub\arbohub.apk, appPackage=com.panasonic.arbohub, deviceScreenSize=720x1280, networkConnectionEnabled=true, noReset=false, warnings={}, appWaitPackage=com.panasonic.arbohub, appWaitActivity=com.panasonic.arbohub.SplashActivity, newCommandTimeOut=5, databaseEnabled=false, deviceName=T4SWCABYFM5LTCKZ, platform=LINUX, deviceUDID=T4SWCABYFM5LTCKZ, appActivity=com.panasonic.arbohub.SplashActivity, desired={app=F:\ArboHub_Workspace\arbohub\arbohub.apk, noReset=false, platformVersion=7.0, automationName=Appium, newCommandTimeOut=5, platformName=Android, deviceName=T4SWCABYFM5LTCKZ}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=ELUGA_I2_Activ, platformName=Android, deviceManufacturer=PANASONIC}]
+Session ID: cbdd2b9f-020f-4b69-b477-27c5f394f0f3
+*** Element info: {Using=id, value=com.panasonic.arbohub:id/tv_okay}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:64)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.arbohub.pages.PermissionsPage.toHandlePermissionPopups(PermissionsPage.java:158)
+	at com.arbohub.testcases.LoginTest.testLogin(LoginTest.java:93)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(To verify all logins)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(Facebook, GILBKNPFZLQS899L)">
+                  </a> <!-- testLogin(Facebook, GILBKNPFZLQS899L) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(Facebook, GILBKNPFZLQS899L)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;Yashi&apos;, ip: &apos;10.10.14.217&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20-ea&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=F:\ArboHub_Workspace\arbohub\arbohub.apk, appPackage=com.panasonic.arbohub, deviceScreenSize=720x1280, networkConnectionEnabled=true, noReset=false, warnings={}, appWaitPackage=com.panasonic.arbohub, appWaitActivity=com.panasonic.arbohub.SplashActivity, newCommandTimeOut=5, databaseEnabled=false, deviceName=T4SWCABYFM5LTCKZ, platform=LINUX, deviceUDID=T4SWCABYFM5LTCKZ, appActivity=com.panasonic.arbohub.SplashActivity, desired={app=F:\ArboHub_Workspace\arbohub\arbohub.apk, noReset=false, platformVersion=7.0, automationName=Appium, newCommandTimeOut=5, platformName=Android, deviceName=T4SWCABYFM5LTCKZ}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=ELUGA_I2_Activ, platformName=Android, deviceManufacturer=PANASONIC}]
+Session ID: cbdd2b9f-020f-4b69-b477-27c5f394f0f3
+*** Element info: {Using=id, value=com.android.packageinstaller:id/permission_message}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:64)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at com.arbohub.testcases.LoginTest.testLogin(LoginTest.java:121)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(To verify all logins)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(Phone, GILBKNPFZLQS899L)">
+                  </a> <!-- testLogin(Phone, GILBKNPFZLQS899L) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(Phone, GILBKNPFZLQS899L)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.49 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;Yashi&apos;, ip: &apos;10.10.14.217&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20-ea&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=F:\ArboHub_Workspace\arbohub\arbohub.apk, appPackage=com.panasonic.arbohub, deviceScreenSize=720x1280, networkConnectionEnabled=true, noReset=false, warnings={}, appWaitPackage=com.panasonic.arbohub, appWaitActivity=com.panasonic.arbohub.SplashActivity, newCommandTimeOut=5, databaseEnabled=false, deviceName=T4SWCABYFM5LTCKZ, platform=LINUX, deviceUDID=T4SWCABYFM5LTCKZ, appActivity=com.panasonic.arbohub.SplashActivity, desired={app=F:\ArboHub_Workspace\arbohub\arbohub.apk, noReset=false, platformVersion=7.0, automationName=Appium, newCommandTimeOut=5, platformName=Android, deviceName=T4SWCABYFM5LTCKZ}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=ELUGA_I2_Activ, platformName=Android, deviceManufacturer=PANASONIC}]
+Session ID: cbdd2b9f-020f-4b69-b477-27c5f394f0f3
+*** Element info: {Using=id, value=com.panasonic.arbohub:id/user_name}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:64)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at com.arbohub.testcases.LoginTest.testLogin(LoginTest.java:173)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(To verify all logins)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLoginScreen(GILBKNPFZLQS899L)">
+                  </a> <!-- testLoginScreen(GILBKNPFZLQS899L) -->
+                  <span class="method-name">testLoginScreen</span>
+                  <span class="parameters">(GILBKNPFZLQS899L)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 58.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;Yashi&apos;, ip: &apos;10.10.14.217&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20-ea&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=F:\ArboHub_Workspace\arbohub\arbohub.apk, appPackage=com.panasonic.arbohub, deviceScreenSize=720x1280, networkConnectionEnabled=true, noReset=false, warnings={}, appWaitPackage=com.panasonic.arbohub, appWaitActivity=com.panasonic.arbohub.SplashActivity, newCommandTimeOut=5, databaseEnabled=false, deviceName=T4SWCABYFM5LTCKZ, platform=LINUX, deviceUDID=T4SWCABYFM5LTCKZ, appActivity=com.panasonic.arbohub.SplashActivity, desired={app=F:\ArboHub_Workspace\arbohub\arbohub.apk, noReset=false, platformVersion=7.0, automationName=Appium, newCommandTimeOut=5, platformName=Android, deviceName=T4SWCABYFM5LTCKZ}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=ELUGA_I2_Activ, platformName=Android, deviceManufacturer=PANASONIC}]
+Session ID: cbdd2b9f-020f-4b69-b477-27c5f394f0f3
+*** Element info: {Using=xpath, value=//*[@text=&apos;Phone Number&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.arbohub.testcases.LoginTest.testLoginScreen(LoginTest.java:66)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(To verify Login screen senarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arbohub.testcases.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin(Google, GILBKNPFZLQS899L)">
+                  </a> <!-- testLogin(Google, GILBKNPFZLQS899L) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(Google, GILBKNPFZLQS899L)</span>
+                  <em>
+(To verify all logins)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arbohub.testcases.PermissionsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAllowPermissionPopUps(GILBKNPFZLQS899L)">
+                  </a> <!-- testAllowPermissionPopUps(GILBKNPFZLQS899L) -->
+                  <span class="method-name">testAllowPermissionPopUps</span>
+                  <span class="parameters">(GILBKNPFZLQS899L)</span>
+                  <em>
+(To verify Permission Popups)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDenyPermissionPopUps(GILBKNPFZLQS899L)">
+                  </a> <!-- testDenyPermissionPopUps(GILBKNPFZLQS899L) -->
+                  <span class="method-name">testDenyPermissionPopUps</span>
+                  <span class="parameters">(GILBKNPFZLQS899L)</span>
+                  <em>
+(To verify Deny button in Permission Popups)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.arbohub.testcases.WelcomeOnboardingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOnboardingScreen(GILBKNPFZLQS899L)">
+                  </a> <!-- testOnboardingScreen(GILBKNPFZLQS899L) -->
+                  <span class="method-name">testOnboardingScreen</span>
+                  <span class="parameters">(GILBKNPFZLQS899L)</span>
+                  <em>
+(To verify Onboarding screen senarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWelcomeScreen(GILBKNPFZLQS899L)">
+                  </a> <!-- testWelcomeScreen(GILBKNPFZLQS899L) -->
+                  <span class="method-name">testWelcomeScreen</span>
+                  <span class="parameters">(GILBKNPFZLQS899L)</span>
+                  <em>
+(To verify Welcome screen senarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\ArboHub_Workspace\arbohub\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.arbohub.library.MyNXGTestListner&quot;/&gt;
+    &lt;listener class-name=&quot;com.arbohub.library.HtmlReportListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Regression&quot;&gt;
+    &lt;parameter name=&quot;device&quot; value=&quot;GILBKNPFZLQS899L&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.arbohub.testcases.PermissionsTest&quot;/&gt;
+      &lt;class name=&quot;com.arbohub.testcases.WelcomeOnboardingTest&quot;/&gt;
+      &lt;class name=&quot;com.arbohub.testcases.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression --&gt;
+  &lt;test name=&quot;Regression(failed)&quot;&gt;
+    &lt;parameter name=&quot;device&quot; value=&quot;GILBKNPFZLQS899L&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.arbohub.testcases.LoginTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testLoginScreen&quot; invocation-numbers=&quot;0&quot;/&gt;
+          &lt;include name=&quot;inititialize&quot;/&gt;
+          &lt;include name=&quot;testLogin&quot; invocation-numbers=&quot;0 1 3&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.arbohub.testcases.LoginTest --&gt;
+      &lt;class name=&quot;com.arbohub.testcases.PermissionsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;inititialize&quot;/&gt;
+          &lt;include name=&quot;launchApp&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.arbohub.testcases.PermissionsTest --&gt;
+      &lt;class name=&quot;com.arbohub.testcases.WelcomeOnboardingTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;inititialize&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.arbohub.testcases.WelcomeOnboardingTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Regression(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Regression (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Regression(failed) (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(9);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testLoginScreen')
+data.setCell(0, 2, 'com.arbohub.testcases.LoginTest')
+data.setCell(0, 3, 89620);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testLogin')
+data.setCell(1, 2, 'com.arbohub.testcases.LoginTest')
+data.setCell(1, 3, 59659);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testLogin')
+data.setCell(2, 2, 'com.arbohub.testcases.LoginTest')
+data.setCell(2, 3, 55544);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testLogin')
+data.setCell(3, 2, 'com.arbohub.testcases.LoginTest')
+data.setCell(3, 3, 38456);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testLogin')
+data.setCell(4, 2, 'com.arbohub.testcases.LoginTest')
+data.setCell(4, 3, 30398);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testOnboardingScreen')
+data.setCell(5, 2, 'com.arbohub.testcases.WelcomeOnboardingTest')
+data.setCell(5, 3, 18103);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testAllowPermissionPopUps')
+data.setCell(6, 2, 'com.arbohub.testcases.PermissionsTest')
+data.setCell(6, 3, 6159);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testDenyPermissionPopUps')
+data.setCell(7, 2, 'com.arbohub.testcases.PermissionsTest')
+data.setCell(7, 3, 5261);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testWelcomeScreen')
+data.setCell(8, 2, 'com.arbohub.testcases.WelcomeOnboardingTest')
+data.setCell(8, 3, 603);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testWelcomeScreen(GILBKNPFZLQS899L)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP20</span>
+                <span class="reporter-method-output">STEP21</span>
+                <span class="reporter-method-output">STEP22</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testDenyPermissionPopUps(GILBKNPFZLQS899L)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP1</span>
+                <span class="reporter-method-output">STEP2</span>
+                <span class="reporter-method-output">STEP3</span>
+                <span class="reporter-method-output">STEP4</span>
+                <span class="reporter-method-output">STEP5</span>
+                <span class="reporter-method-output">STEP6</span>
+                <span class="reporter-method-output">STEP7</span>
+                <span class="reporter-method-output">STEP8</span>
+                <span class="reporter-method-output">STEP9</span>
+                <span class="reporter-method-output">STEP10</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testLogin(Google, GILBKNPFZLQS899L)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP49</span>
+                <span class="reporter-method-output">STEP50</span>
+                <span class="reporter-method-output">STEP51</span>
+                <span class="reporter-method-output">STEP52</span>
+                <span class="reporter-method-output">STEP53</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testOnboardingScreen(GILBKNPFZLQS899L)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP23</span>
+                <span class="reporter-method-output">STEP24</span>
+                <span class="reporter-method-output">STEP25</span>
+                <span class="reporter-method-output">STEP26</span>
+                <span class="reporter-method-output">STEP27</span>
+                <span class="reporter-method-output">STEP28</span>
+                <span class="reporter-method-output">STEP29</span>
+                <span class="reporter-method-output">STEP30</span>
+                <span class="reporter-method-output">STEP31</span>
+                <span class="reporter-method-output">STEP32</span>
+                <span class="reporter-method-output">STEP33</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testAllowPermissionPopUps(GILBKNPFZLQS899L)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP11</span>
+                <span class="reporter-method-output">STEP12</span>
+                <span class="reporter-method-output">STEP13</span>
+                <span class="reporter-method-output">STEP14</span>
+                <span class="reporter-method-output">STEP15</span>
+                <span class="reporter-method-output">STEP16</span>
+                <span class="reporter-method-output">STEP17</span>
+                <span class="reporter-method-output">STEP18</span>
+                <span class="reporter-method-output">STEP19</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testLogin(Guest, GILBKNPFZLQS899L)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP54</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testLogin(Facebook, GILBKNPFZLQS899L)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP43</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testLogin(Phone, GILBKNPFZLQS899L)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP44</span>
+                <span class="reporter-method-output">STEP45</span>
+                <span class="reporter-method-output">STEP46</span>
+                <span class="reporter-method-output">STEP47</span>
+                <span class="reporter-method-output">STEP48</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testLoginScreen(GILBKNPFZLQS899L)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">STEP34</span>
+                <span class="reporter-method-output">STEP35</span>
+                <span class="reporter-method-output">STEP36</span>
+                <span class="reporter-method-output">STEP37</span>
+                <span class="reporter-method-output">STEP38</span>
+                <span class="reporter-method-output">STEP39</span>
+                <span class="reporter-method-output">STEP40</span>
+                <span class="reporter-method-output">STEP41</span>
+                <span class="reporter-method-output">STEP42</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">4 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.arbohub.testcases.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">launchApp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.arbohub.testcases.WelcomeOnboardingTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">launchApp</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arbohub.testcases.PermissionsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">launchApp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">inititialize</span>
+                <span class="method-start">39919 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDenyPermissionPopUps(GILBKNPFZLQS899L)</span>
+                <span class="method-start">39982 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">inititialize</span>
+                <span class="method-start">45245 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAllowPermissionPopUps(GILBKNPFZLQS899L)</span>
+                <span class="method-start">45251 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arbohub.testcases.WelcomeOnboardingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">inititialize</span>
+                <span class="method-start">51414 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">testWelcomeScreen(GILBKNPFZLQS899L)</span>
+                <span class="method-start">51423 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testOnboardingScreen(GILBKNPFZLQS899L)</span>
+                <span class="method-start">52027 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arbohub.testcases.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">inititialize</span>
+                <span class="method-start">70132 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLoginScreen(GILBKNPFZLQS899L)</span>
+                <span class="method-start">70148 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(Facebook, GILBKNPFZLQS899L)</span>
+                <span class="method-start">164332 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(Phone, GILBKNPFZLQS899L)</span>
+                <span class="method-start">228141 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testLogin(Google, GILBKNPFZLQS899L)</span>
+                <span class="method-start">287727 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin(Guest, GILBKNPFZLQS899L)</span>
+                <span class="method-start">326184 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.arbohub.testcases.PermissionsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">361486 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

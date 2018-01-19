@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener class-name="com.arbohub.library.MyNXGTestListner" />
+		<listener class-name="com.arbohub.library.HtmlReportListener" />
+	</listeners>
+<!-- <parameter name="port" value="4723"></parameter> -->
+  <test name="Regression"  preserve-order="true">
+  <parameter name="device" value="GILBKNPFZLQS899L"></parameter>
+  <classes>
+			<!-- <class name="com.arbohub.testcases.PermissionsTest" />
+			<class name="com.arbohub.testcases.WelcomeOnboardingTest" />
+			<class name="com.arbohub.testcases.LoginTest" />
+			<class name="com.arbohub.testcases.MenuTest" /> -->
+			<class name="com.arbohub.testcases.CricketAndCelebrationsTest" /> 
+			<!-- <class name="com.arbohub.testcases.HoroscopeTest" /> 
+			<class name="com.arbohub.testcases.NewsUpdateTest" />    -->
+			<!-- <class name="com.arbohub.testcases.Sample" /> -->
+</classes>
+ </test> <!-- Test -->
+</suite> <!-- Suite -->
+

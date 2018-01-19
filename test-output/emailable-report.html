@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">Regression</a></td><td class="num">5</td><td class="num">0</td><td class="num attn">4</td><td class="num">363,290</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">com.arbohub.testcases.LoginTest</td><td><a href="#m0">testLogin</a></td><td rowspan="3">1516354342352</td><td rowspan="3">30398</td></tr><tr class="failedeven"><td><a href="#m1">testLogin</a></td></tr><tr class="failedeven"><td><a href="#m2">testLogin</a></td></tr><tr class="failedeven"><td><a href="#m3">testLoginScreen</a></td><td rowspan="1">1516354086316</td><td rowspan="1">89620</td></tr><tr><th colspan="4">Regression &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.arbohub.testcases.LoginTest</td><td><a href="#m4">testLogin</a></td><td rowspan="1">1516354303895</td><td rowspan="1">38456</td></tr><tr class="passedodd"><td rowspan="2">com.arbohub.testcases.PermissionsTest</td><td><a href="#m5">testAllowPermissionPopUps</a></td><td rowspan="1">1516354061419</td><td rowspan="1">6159</td></tr><tr class="passedodd"><td><a href="#m6">testDenyPermissionPopUps</a></td><td rowspan="1">1516354056150</td><td rowspan="1">5261</td></tr><tr class="passedeven"><td rowspan="2">com.arbohub.testcases.WelcomeOnboardingTest</td><td><a href="#m7">testOnboardingScreen</a></td><td rowspan="1">1516354068195</td><td rowspan="1">18103</td></tr><tr class="passedeven"><td><a href="#m8">testWelcomeScreen</a></td><td rowspan="1">1516354067591</td><td rowspan="1">603</td></tr></tbody></table><h2>Regression</h2><h3 id="m0">com.arbohub.testcases.LoginTest#testLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Guest</td><td>GILBKNPFZLQS899L</td></tr><tr><th colspan="2">Messages</th></tr><tr><td colspan="2"><div class="messages">STEP54</div></td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.31 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;Yashi&apos;, ip: &apos;10.10.14.217&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20-ea&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=F:\ArboHub_Workspace\arbohub\arbohub.apk, appPackage=com.panasonic.arbohub, deviceScreenSize=720x1280, networkConnectionEnabled=true, noReset=false, warnings={}, appWaitPackage=com.panasonic.arbohub, appWaitActivity=com.panasonic.arbohub.SplashActivity, newCommandTimeOut=5, databaseEnabled=false, deviceName=T4SWCABYFM5LTCKZ, platform=LINUX, deviceUDID=T4SWCABYFM5LTCKZ, appActivity=com.panasonic.arbohub.SplashActivity, desired={app=F:\ArboHub_Workspace\arbohub\arbohub.apk, noReset=false, platformVersion=7.0, automationName=Appium, newCommandTimeOut=5, platformName=Android, deviceName=T4SWCABYFM5LTCKZ}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=ELUGA_I2_Activ, platformName=Android, deviceManufacturer=PANASONIC}]
+Session ID: cbdd2b9f-020f-4b69-b477-27c5f394f0f3
+*** Element info: {Using=id, value=com.panasonic.arbohub:id/tv_okay}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:64)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.arbohub.pages.PermissionsPage.toHandlePermissionPopups(PermissionsPage.java:158)
+	at com.arbohub.testcases.LoginTest.testLogin(LoginTest.java:93)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.arbohub.testcases.LoginTest#testLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Facebook</td><td>GILBKNPFZLQS899L</td></tr><tr><th colspan="2">Messages</th></tr><tr><td colspan="2"><div class="messages">STEP43</div></td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;Yashi&apos;, ip: &apos;10.10.14.217&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20-ea&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=F:\ArboHub_Workspace\arbohub\arbohub.apk, appPackage=com.panasonic.arbohub, deviceScreenSize=720x1280, networkConnectionEnabled=true, noReset=false, warnings={}, appWaitPackage=com.panasonic.arbohub, appWaitActivity=com.panasonic.arbohub.SplashActivity, newCommandTimeOut=5, databaseEnabled=false, deviceName=T4SWCABYFM5LTCKZ, platform=LINUX, deviceUDID=T4SWCABYFM5LTCKZ, appActivity=com.panasonic.arbohub.SplashActivity, desired={app=F:\ArboHub_Workspace\arbohub\arbohub.apk, noReset=false, platformVersion=7.0, automationName=Appium, newCommandTimeOut=5, platformName=Android, deviceName=T4SWCABYFM5LTCKZ}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=ELUGA_I2_Activ, platformName=Android, deviceManufacturer=PANASONIC}]
+Session ID: cbdd2b9f-020f-4b69-b477-27c5f394f0f3
+*** Element info: {Using=id, value=com.android.packageinstaller:id/permission_message}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:64)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at com.arbohub.testcases.LoginTest.testLogin(LoginTest.java:121)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.arbohub.testcases.LoginTest#testLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Phone</td><td>GILBKNPFZLQS899L</td></tr><tr><th colspan="2">Messages</th></tr><tr><td colspan="2"><div class="messages">STEP44<br/>STEP45<br/>STEP46<br/>STEP47<br/>STEP48</div></td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30.49 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;Yashi&apos;, ip: &apos;10.10.14.217&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20-ea&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=F:\ArboHub_Workspace\arbohub\arbohub.apk, appPackage=com.panasonic.arbohub, deviceScreenSize=720x1280, networkConnectionEnabled=true, noReset=false, warnings={}, appWaitPackage=com.panasonic.arbohub, appWaitActivity=com.panasonic.arbohub.SplashActivity, newCommandTimeOut=5, databaseEnabled=false, deviceName=T4SWCABYFM5LTCKZ, platform=LINUX, deviceUDID=T4SWCABYFM5LTCKZ, appActivity=com.panasonic.arbohub.SplashActivity, desired={app=F:\ArboHub_Workspace\arbohub\arbohub.apk, noReset=false, platformVersion=7.0, automationName=Appium, newCommandTimeOut=5, platformName=Android, deviceName=T4SWCABYFM5LTCKZ}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=ELUGA_I2_Activ, platformName=Android, deviceManufacturer=PANASONIC}]
+Session ID: cbdd2b9f-020f-4b69-b477-27c5f394f0f3
+*** Element info: {Using=id, value=com.panasonic.arbohub:id/user_name}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:64)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.getText(Unknown Source)
+	at com.arbohub.testcases.LoginTest.testLogin(LoginTest.java:173)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.arbohub.testcases.LoginTest#testLoginScreen</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>GILBKNPFZLQS899L</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">STEP34<br/>STEP35<br/>STEP36<br/>STEP37<br/>STEP38<br/>STEP39<br/>STEP40<br/>STEP41<br/>STEP42</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 58.03 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;Yashi&apos;, ip: &apos;10.10.14.217&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_20-ea&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{app=F:\ArboHub_Workspace\arbohub\arbohub.apk, appPackage=com.panasonic.arbohub, deviceScreenSize=720x1280, networkConnectionEnabled=true, noReset=false, warnings={}, appWaitPackage=com.panasonic.arbohub, appWaitActivity=com.panasonic.arbohub.SplashActivity, newCommandTimeOut=5, databaseEnabled=false, deviceName=T4SWCABYFM5LTCKZ, platform=LINUX, deviceUDID=T4SWCABYFM5LTCKZ, appActivity=com.panasonic.arbohub.SplashActivity, desired={app=F:\ArboHub_Workspace\arbohub\arbohub.apk, noReset=false, platformVersion=7.0, automationName=Appium, newCommandTimeOut=5, platformName=Android, deviceName=T4SWCABYFM5LTCKZ}, platformVersion=7.0, webStorageEnabled=false, locationContextEnabled=false, automationName=Appium, takesScreenshot=true, javascriptEnabled=true, deviceModel=ELUGA_I2_Activ, platformName=Android, deviceManufacturer=PANASONIC}]
+Session ID: cbdd2b9f-020f-4b69-b477-27c5f394f0f3
+*** Element info: {Using=xpath, value=//*[@text=&apos;Phone Number&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:56)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:134)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:52)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.arbohub.testcases.LoginTest.testLoginScreen(LoginTest.java:66)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.arbohub.testcases.LoginTest#testLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Google</td><td>GILBKNPFZLQS899L</td></tr><tr><th colspan="2">Messages</th></tr><tr><td colspan="2"><div class="messages">STEP49<br/>STEP50<br/>STEP51<br/>STEP52<br/>STEP53</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">com.arbohub.testcases.PermissionsTest#testAllowPermissionPopUps</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>GILBKNPFZLQS899L</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">STEP11<br/>STEP12<br/>STEP13<br/>STEP14<br/>STEP15<br/>STEP16<br/>STEP17<br/>STEP18<br/>STEP19</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.arbohub.testcases.PermissionsTest#testDenyPermissionPopUps</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>GILBKNPFZLQS899L</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">STEP1<br/>STEP2<br/>STEP3<br/>STEP4<br/>STEP5<br/>STEP6<br/>STEP7<br/>STEP8<br/>STEP9<br/>STEP10</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m7">com.arbohub.testcases.WelcomeOnboardingTest#testOnboardingScreen</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>GILBKNPFZLQS899L</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">STEP23<br/>STEP24<br/>STEP25<br/>STEP26<br/>STEP27<br/>STEP28<br/>STEP29<br/>STEP30<br/>STEP31<br/>STEP32<br/>STEP33</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m8">com.arbohub.testcases.WelcomeOnboardingTest#testWelcomeScreen</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>GILBKNPFZLQS899L</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">STEP20<br/>STEP21<br/>STEP22</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
